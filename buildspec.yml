@@ -2,18 +2,12 @@ version: 0.2
 
 phases:
   install:
-    runtime-versions:
-      nodejs: 20  # Specify the Node.js version you want
     commands:
-      - echo "Installing dependencies..."
-      - npm install   # if you have a package.json
-  pre_build:
-    commands:
-      - echo "Pre-build phase..."
+      - echo "No dependencies to install"
   build:
     commands:
       - echo "Running the script..."
-      - node demo.js   # Replace 'index.js' with your actual file name
+      - node demo.js   # change to your actual filename
   post_build:
     commands:
       - echo "Build completed."
@@ -22,3 +16,4 @@ artifacts:
   files:
     - '**/*'
   discard-paths: yes
+
