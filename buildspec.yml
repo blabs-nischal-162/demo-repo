@@ -13,7 +13,7 @@ phases:
   build:
     commands:
       - echo "Running the script..."
-      - node index.js   # Replace 'index.js' with your actual file name
+      - node demo.js   # Replace 'index.js' with your actual file name
   post_build:
     commands:
       - echo "Build completed."
